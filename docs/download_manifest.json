@@ -1,0 +1,42 @@
+{
+  "retrieved_utc": "2026-11-07T00:16:47+00:00",
+  "wfs_endpoint": "https://openmaps.gov.bc.ca/geo/pub/ows",
+  "bbox_epsg3005": [
+    1170000,
+    430000,
+    1330000,
+    520000
+  ],
+  "layers": {
+    "watershed_groups": {
+      "layer": "WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY",
+      "filter": null,
+      "features": 10
+    },
+    "assessment_watersheds": {
+      "layer": "WHSE_BASEMAPPING.FWA_ASSESSMENT_WATERSHEDS_POLY",
+      "filter": null,
+      "features": 236
+    },
+    "lakes": {
+      "layer": "WHSE_BASEMAPPING.FWA_LAKES_POLY",
+      "filter": "AREA_HA >= 10",
+      "features": 135
+    },
+    "streams": {
+      "layer": "WHSE_BASEMAPPING.FWA_STREAM_NETWORKS_SP",
+      "filter": "STREAM_ORDER >= 3",
+      "features": 10429
+    },
+    "hydrometric": {
+      "layer": "WHSE_ENVIRONMENTAL_MONITORING.ENVCAN_HYDROMETRIC_STN_SP",
+      "filter": null,
+      "features": 182
+    },
+    "ems_locations": {
+      "layer": "WHSE_ENVIRONMENTAL_MONITORING.EMS_MONITORING_LOCN_TYPES_SVW",
+      "filter": null,
+      "features": 4597
+    }
+  }
+}

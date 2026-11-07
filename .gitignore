@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+data/raw/
+data/processed/*
+!data/processed/analysis.gpkg
+*.duckdb
+*.sqlite
+*.db

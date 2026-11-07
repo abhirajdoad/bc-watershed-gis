@@ -1,0 +1,58 @@
+{
+  "n_watersheds": 138,
+  "aoi_area_km2": 6365.4,
+  "ems_rows_total_in_download_bbox": 4597,
+  "ems_recent_rows_in_aoi": 344,
+  "ems_recent_unique_sites_in_aoi": 331,
+  "ems_near_water_200m": 129,
+  "ems_near_water_colocated_with_active_gauge": 6,
+  "ems_null_last_sample_date_in_bbox": 2718,
+  "hydro_in_aoi": 133,
+  "hydro_active_in_aoi": 30,
+  "hydro_active_in_bbox_outside_aoi": 8,
+  "hydro_active_within5km_of_aoi_edge": 12,
+  "stream_km_order3plus": 2427.0,
+  "lakes_ge10ha": 89,
+  "ws_with_active_gauge": 25,
+  "ws_near_water_ems_only": 32,
+  "ws_neither": 81,
+  "ws_neither_area_pct": 49.4,
+  "ws_neither_but_other_recent_ems": 15,
+  "pct_stream_within5km": {
+    "active_hydrometric": 31.1,
+    "near_water_ems": 44.6,
+    "hydrometric_or_near_water_ems": 56.8,
+    "hydrometric_or_any_recent_ems": 62.6
+  },
+  "overall_dens_per100km2": {
+    "active_hydrometric": 0.471,
+    "near_water_ems": 2.027,
+    "distinct_sites_combined": 2.404
+  },
+  "median_dens_combined_per100km2": 0.0,
+  "small_units_lt5km2": [
+    "Unnamed (8183)"
+  ],
+  "ems_near_water_sensitivity": {
+    "50m": 85,
+    "100m": 104,
+    "200m": 129,
+    "500m": 179,
+    "1000m": 213
+  },
+  "validation": {
+    "crs": "EPSG:3005 (NAD83 / BC Albers, equal-area)",
+    "max_area_diff_pct": 0.0,
+    "ems_max_coord_err_m": 0.38,
+    "ems_median_coord_err_m": 0.04,
+    "ems_assigned": 331,
+    "ems_in_aoi": 331,
+    "hydro_assigned": 133,
+    "hydro_in_aoi": 133
+  },
+  "coverage_class_counts": {
+    "No active gauge or near-water EMS site": 81,
+    "Near-water EMS site only": 32,
+    "Active hydrometric station": 25
+  }
+}

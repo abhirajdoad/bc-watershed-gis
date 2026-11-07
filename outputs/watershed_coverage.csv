@@ -1,0 +1,139 @@
+ws_id,ws_name,WATERSHED_GROUP_CODE,area_km2,area_diff_pct,n_ems,n_ems_sw,n_ems_sw_sep,n_hydro_active,n_hydro_all,n_sites_comb,dens_ems,dens_ems_sw,dens_hydro_active,dens_hydro_all,dens_sites_comb,small_unit,stream_km,lake_km2,stream_km_within5km_hydro,stream_km_within5km_ems_sw,stream_km_within5km_any,stream_km_within5km_hydro_allems,pct_stream_covered_hydro,pct_stream_covered_any,nearest_hydro_active_km,nearest_ems_sw_km,coverage_class
+8132,Kanaka Creek,LFRA,62.31,0.0,2,0,0,1,1,1,3.21,0.0,1.605,1.605,1.605,False,26.072,0.0,21.248,11.409,24.994,26.072,81.5,95.868,5.325,4.45,Active hydrometric station
+8133,Salmon River,LFRA,76.961,0.0,4,3,3,1,2,4,5.197,3.898,1.299,2.599,5.197,False,39.976,0.0,25.715,39.544,39.544,39.976,64.325,98.918,3.254,2.985,Active hydrometric station
+8134,Nathan Creek,LFRA,33.358,0.0,1,0,0,0,1,0,2.998,0.0,0.0,2.998,0.0,False,13.998,0.0,4.52,13.998,13.998,13.998,32.288,100.0,7.394,3.616,No active gauge or near-water EMS site
+8135,Whonnock Creek,LFRA,20.625,0.0,1,0,0,0,1,0,4.848,0.0,0.0,4.848,0.0,False,0.0,0.516,0.0,0.0,0.0,0.0,,,3.302,4.212,No active gauge or near-water EMS site
+8137,Cascade Creek,LFRA,44.254,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,25.616,0.326,0.0,0.0,0.0,11.572,0.0,0.0,17.98,12.631,No active gauge or near-water EMS site
+8136,Stave River,LFRA,58.043,0.0,1,1,1,1,2,2,1.723,1.723,1.723,3.446,3.446,False,10.076,3.918,10.076,10.076,10.076,10.076,100.0,100.0,1.908,0.249,Active hydrometric station
+8139,Salsbury Creek,LFRA,34.373,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.394,1.06,0.0,0.621,0.621,0.621,0.0,5.014,20.237,7.859,No active gauge or near-water EMS site
+8138,Lost Creek,LFRA,36.384,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.719,0.0,0.0,0.0,0.0,0.0,0.0,0.0,20.921,9.151,No active gauge or near-water EMS site
+8140,Tingle Creek,LFRA,66.779,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,27.013,1.25,0.0,0.0,0.0,0.0,0.0,0.0,8.607,13.273,No active gauge or near-water EMS site
+8141,Roaring Creek,LFRA,21.35,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,9.209,0.588,0.0,0.0,0.0,0.0,0.0,0.0,16.376,12.66,No active gauge or near-water EMS site
+8142,Winslow Creek,LFRA,59.527,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,19.216,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.986,16.433,No active gauge or near-water EMS site
+8143,George Good Creek,LFRA,38.401,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.661,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.456,22.035,No active gauge or near-water EMS site
+8144,Winslow Creek,LFRA,43.947,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,15.949,0.258,0.0,0.0,0.0,0.0,0.0,0.0,14.896,25.174,No active gauge or near-water EMS site
+8147,Stave River,LFRA,39.965,0.0,0,0,0,0,1,0,0.0,0.0,0.0,2.502,0.0,False,6.948,0.391,0.532,0.688,0.688,5.153,7.662,9.899,10.719,6.701,No active gauge or near-water EMS site
+8148,Stave Lake,LFRA,56.501,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,48.568,56.408,0.0,19.266,19.266,19.266,0.0,39.668,18.112,4.441,No active gauge or near-water EMS site
+8149,Stave River,LFRA,90.288,0.0,1,1,1,0,0,1,1.108,1.108,0.0,0.0,1.108,False,16.766,1.954,0.0,11.181,11.181,11.181,0.0,66.692,12.005,7.93,Near-water EMS site only
+8151,Stave River,LFRA,76.31,0.0,0,0,0,1,1,1,0.0,0.0,1.31,1.31,1.31,False,32.169,0.55,13.471,0.0,13.471,13.471,41.876,41.876,5.372,15.29,Active hydrometric station
+8150,Stave River,LFRA,41.384,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,4.02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.358,12.138,No active gauge or near-water EMS site
+8153,Stave River,LFRA,35.638,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.424,0.259,4.291,0.0,4.291,4.291,24.626,24.626,5.349,21.953,No active gauge or near-water EMS site
+8152,Stave River,LFRA,35.518,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,14.408,0.34,14.408,0.0,14.408,14.408,100.0,100.0,2.416,17.221,No active gauge or near-water EMS site
+8157,Silverdale Creek,LFRA,25.47,0.0,0,0,0,0,1,0,0.0,0.0,0.0,3.926,0.0,False,5.59,0.0,5.59,3.82,5.59,5.59,100.0,100.0,4.985,5.244,No active gauge or near-water EMS site
+8158,McLennan Creek,LFRA,37.98,0.0,3,1,1,0,3,1,7.899,2.633,0.0,7.899,2.633,False,14.101,0.0,8.829,14.101,14.101,14.101,62.611,100.0,5.566,2.415,Near-water EMS site only
+8160,Clayburn Creek,LFRA,48.326,0.0,2,2,2,0,3,2,4.139,4.139,0.0,6.208,4.139,False,12.211,0.158,3.839,11.76,11.76,12.205,31.437,96.299,7.207,3.8,Near-water EMS site only
+8161,Lower Hatzic Slough,LFRA,58.762,0.0,6,4,4,0,5,4,10.211,6.807,0.0,8.509,6.807,False,18.858,2.848,0.697,18.858,18.858,18.858,3.694,100.0,7.927,0.672,Near-water EMS site only
+8159,Matsqui Slough,LFRA,20.604,0.0,0,0,0,0,1,0,0.0,0.0,0.0,4.853,0.0,False,7.408,0.0,7.408,7.408,7.408,7.408,100.0,100.0,3.201,3.334,No active gauge or near-water EMS site
+8162,Lagace Creek,LFRA,24.722,0.0,1,0,0,0,1,0,4.045,0.0,0.0,4.045,0.0,False,15.396,0.0,0.0,3.837,3.837,15.396,0.0,24.926,12.59,5.716,No active gauge or near-water EMS site
+8163,Unnamed (8163),LFRA,31.584,0.0,3,0,0,0,0,0,9.499,0.0,0.0,0.0,0.0,False,21.715,0.0,0.0,21.715,21.715,21.715,0.0,100.0,26.754,1.583,No active gauge or near-water EMS site
+8165,Unnamed (8165),LFRA,51.143,0.0,20,0,0,0,0,0,39.106,0.0,0.0,0.0,0.0,False,6.914,0.0,0.0,6.914,6.914,6.914,0.0,100.0,18.288,3.62,No active gauge or near-water EMS site
+8167,Fraser River,LFRA,85.035,0.0,0,0,0,1,2,1,0.0,0.0,1.176,2.352,1.176,False,32.757,0.0,19.089,14.73,26.449,32.757,58.274,80.743,7.167,3.879,Active hydrometric station
+8166,Fraser River,LFRA,87.64,0.0,11,9,9,0,0,9,12.551,10.269,0.0,0.0,10.269,False,31.821,0.0,5.69,31.53,31.821,31.821,17.881,100.0,11.113,1.967,Near-water EMS site only
+8169,Fraser River,LFRA,52.155,0.0,7,0,0,1,2,1,13.422,0.0,1.917,3.835,1.917,False,22.754,0.0,15.435,21.385,21.385,22.754,67.834,93.983,0.79,3.449,Active hydrometric station
+8168,Fraser River,LFRA,34.496,0.0,3,0,0,0,1,0,8.697,0.0,0.0,2.899,0.0,False,30.863,0.0,23.791,20.793,26.596,30.863,77.086,86.175,2.537,6.182,No active gauge or near-water EMS site
+8170,Fraser River,LFRA,44.816,0.0,7,2,2,0,0,2,15.619,4.463,0.0,0.0,4.463,False,34.903,0.0,20.957,34.903,34.903,34.903,60.042,100.0,6.9,2.609,Near-water EMS site only
+8171,Fraser River,LFRA,31.318,0.0,3,2,2,1,2,3,9.579,6.386,3.193,6.386,9.579,False,23.233,0.0,18.03,23.233,23.233,23.233,77.606,100.0,2.537,2.089,Active hydrometric station
+8172,Unnamed (8172),LFRA,13.994,0.0,1,0,0,0,0,0,7.146,0.0,0.0,0.0,0.0,False,0.0,0.44,0.0,0.0,0.0,0.0,,,4.751,2.848,No active gauge or near-water EMS site
+8173,Unnamed (8173),LFRA,55.469,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,,,26.165,5.624,No active gauge or near-water EMS site
+8174,Campbell River,LFRA,72.244,0.0,6,4,4,0,2,4,8.305,5.537,0.0,2.768,5.537,False,26.557,0.0,0.577,26.557,26.557,26.557,2.171,100.0,8.727,2.148,Near-water EMS site only
+8175,Nicomekl River,LFRA,88.279,0.0,3,2,2,1,3,3,3.398,2.266,1.133,3.398,3.398,False,31.01,0.0,10.152,29.96,29.96,29.96,32.739,96.614,6.332,2.302,Active hydrometric station
+8176,Anderson Creek,LFRA,27.279,0.0,4,1,1,0,1,1,14.663,3.666,0.0,3.666,3.666,False,11.955,0.0,6.935,11.955,11.955,11.955,58.007,100.0,4.429,1.489,Near-water EMS site only
+8177,Murray Creek,LFRA,27.9,0.0,2,1,1,0,1,1,7.169,3.584,0.0,3.584,3.584,False,6.976,0.0,6.896,6.976,6.976,6.976,98.864,100.0,5.091,1.832,Near-water EMS site only
+8179,Serpentine River,LFRA,39.42,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,20.378,0.11,0.0,16.302,16.302,20.378,0.0,79.998,11.128,3.808,No active gauge or near-water EMS site
+8178,Nicomekl River,LFRA,37.672,0.0,3,2,2,0,1,2,7.963,5.309,0.0,2.654,5.309,False,8.636,0.0,8.636,8.636,8.636,8.636,100.0,100.0,3.259,1.57,Near-water EMS site only
+8180,Mahood Creek,LFRA,42.53,0.0,13,1,1,0,4,1,30.567,2.351,0.0,9.405,2.351,False,8.323,0.0,0.0,7.312,7.312,8.323,0.0,87.859,6.193,0.449,Near-water EMS site only
+8182,Unnamed (8182),LFRA,38.629,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,5.19,0.0,0.0,0.0,0.0,2.372,0.0,0.0,14.722,6.356,No active gauge or near-water EMS site
+8183,Unnamed (8183),LFRA,0.075,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,True,0.0,0.0,0.0,0.0,0.0,0.0,,,15.236,7.393,No active gauge or near-water EMS site
+8181,Serpentine River,LFRA,62.364,0.0,2,0,0,0,1,0,3.207,0.0,0.0,1.603,0.0,False,13.899,0.0,0.0,0.0,0.0,13.899,0.0,0.0,7.528,7.676,No active gauge or near-water EMS site
+8184,Unnamed (8184),LFRA,68.426,0.0,50,13,11,2,2,13,73.072,18.999,2.923,2.923,18.999,False,15.791,0.0,14.532,15.791,15.791,15.791,92.025,100.0,3.779,0.413,Active hydrometric station
+8185,Unnamed (8185),LFRA,33.529,0.0,9,6,5,1,1,6,26.843,17.895,2.983,2.983,17.895,False,9.963,0.0,6.316,9.963,9.963,9.963,63.394,100.0,3.905,0.63,Active hydrometric station
+8085,Fraser River,LFRA,115.649,0.0,12,3,3,0,2,3,10.376,2.594,0.0,1.729,2.594,False,41.038,0.0,0.0,32.55,32.55,41.038,0.0,79.318,19.774,5.932,Near-water EMS site only
+8086,Cohilukthan Slough,LFRA,31.007,0.0,5,0,0,0,0,0,16.125,0.0,0.0,0.0,0.0,False,2.255,0.0,0.0,2.255,2.255,2.255,0.0,100.0,19.406,8.102,No active gauge or near-water EMS site
+8088,Brunette River,LFRA,48.442,0.0,8,3,3,0,7,3,16.514,6.193,0.0,14.45,6.193,False,9.339,0.579,3.095,9.339,9.339,9.339,33.143,100.0,7.102,1.937,Near-water EMS site only
+8090,Coquitlam River,LFRA,71.076,0.0,0,0,0,2,2,2,0.0,0.0,2.814,2.814,2.814,False,39.023,1.963,38.814,11.201,38.814,38.814,99.463,99.463,4.164,3.6,Active hydrometric station
+8091,Or Creek,LFRA,21.282,0.0,0,0,0,1,2,1,0.0,0.0,4.699,9.398,4.699,False,12.0,0.0,12.0,0.0,12.0,12.0,100.0,100.0,1.151,12.39,Active hydrometric station
+8089,Still Creek,LFRA,25.774,0.0,0,0,0,0,1,0,0.0,0.0,0.0,3.88,0.0,False,2.75,0.0,0.0,2.75,2.75,2.75,0.0,100.0,8.654,3.608,No active gauge or near-water EMS site
+8093,Coquitlam River,LFRA,68.064,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,36.652,10.247,25.533,1.169,26.377,26.392,69.665,71.968,4.965,6.817,No active gauge or near-water EMS site
+8092,Blakeny Creek,LFRA,26.595,0.0,0,0,0,1,1,1,0.0,0.0,3.76,3.76,3.76,False,13.916,0.107,8.463,0.0,8.463,8.463,60.814,60.814,4.113,11.598,Active hydrometric station
+8095,Pitt River,LFRA,51.795,0.0,1,0,0,1,3,1,1.931,0.0,1.931,5.792,1.931,False,18.388,0.0,12.036,0.0,12.036,12.101,65.457,65.457,3.929,7.46,Active hydrometric station
+8096,Katzie Slough,LFRA,33.229,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,5.219,0.0,5.219,2.738,5.219,5.219,100.0,100.0,2.78,4.735,No active gauge or near-water EMS site
+8094,Coquitlam River,LFRA,75.366,0.0,0,0,0,1,1,1,0.0,0.0,1.327,1.327,1.327,False,36.578,0.915,22.724,0.0,22.724,22.724,62.126,62.126,3.347,9.945,Active hydrometric station
+8097,Alouette River,LFRA,103.926,0.0,7,5,5,1,3,6,6.736,4.811,0.962,2.887,5.773,False,41.085,10.248,16.772,40.502,41.085,41.085,40.823,100.0,7.772,0.871,Active hydrometric station
+8098,North Alouette River,LFRA,42.166,0.0,4,4,3,1,3,4,9.486,9.486,2.372,7.115,9.486,False,27.74,0.587,12.863,27.74,27.74,27.74,46.371,100.0,6.996,0.611,Active hydrometric station
+8099,Blaney Creek,LFRA,26.78,0.0,1,1,1,0,0,1,3.734,3.734,0.0,0.0,3.734,False,11.256,0.497,6.459,11.256,11.256,11.256,57.377,100.0,4.692,1.552,Near-water EMS site only
+8100,Gold Creek,LFRA,89.513,0.0,1,1,1,0,0,1,1.117,1.117,0.0,0.0,1.117,False,29.922,0.15,0.0,10.823,10.823,10.823,0.0,36.172,18.249,7.425,Near-water EMS site only
+8101,Moyer Creek,LFRA,20.561,0.0,1,1,1,0,0,1,4.864,4.864,0.0,0.0,4.864,False,6.904,0.0,0.0,6.904,6.904,6.904,0.0,100.0,20.172,3.747,Near-water EMS site only
+8102,Alouette River,LFRA,48.044,0.0,2,2,2,0,0,2,4.163,4.163,0.0,0.0,4.163,False,14.727,5.747,0.0,14.727,14.727,14.727,0.0,100.0,20.019,0.561,Near-water EMS site only
+8103,Unnamed (8103),LFRA,23.209,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,6.085,0.0,0.0,3.003,3.003,3.003,0.0,49.34,7.556,4.638,No active gauge or near-water EMS site
+8105,Raven Creek,LFRA,24.645,0.0,0,0,0,0,1,0,0.0,0.0,0.0,4.058,0.0,False,10.669,0.438,0.0,0.0,0.0,0.0,0.0,0.0,15.25,7.125,No active gauge or near-water EMS site
+8104,Widgeon Creek,LFRA,75.678,0.0,0,0,0,0,1,0,0.0,0.0,0.0,1.321,0.0,False,44.052,2.107,0.779,0.0,0.779,0.779,1.769,1.769,8.985,14.461,No active gauge or near-water EMS site
+8106,Osprey Creek,LFRA,20.637,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.338,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.778,13.554,No active gauge or near-water EMS site
+8108,DeBeck Creek,LFRA,49.681,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,26.138,1.32,0.0,0.0,0.0,0.0,0.0,0.0,9.133,15.643,No active gauge or near-water EMS site
+8107,Gurney Creek,LFRA,38.652,0.0,0,0,0,0,1,0,0.0,0.0,0.0,2.587,0.0,False,14.148,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.487,19.343,No active gauge or near-water EMS site
+8109,Vickers Creek,LFRA,39.082,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.94,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.492,23.791,No active gauge or near-water EMS site
+8112,Boise Creek,LFRA,45.173,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.23,0.63,0.0,0.0,0.0,0.0,0.0,0.0,12.74,18.009,No active gauge or near-water EMS site
+8113,Bull Creek,LFRA,23.747,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.989,0.514,0.0,0.0,0.0,0.0,0.0,0.0,10.77,16.79,No active gauge or near-water EMS site
+8123,Pitt River,LFRA,42.876,0.0,0,0,0,0,1,0,0.0,0.0,0.0,2.332,0.0,False,21.597,0.489,0.675,0.0,0.675,0.675,3.124,3.124,7.053,8.277,No active gauge or near-water EMS site
+8124,Pitt River,LFRA,49.602,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.717,0.0,0.0,0.0,0.0,0.0,0.0,0.0,12.736,14.374,No active gauge or near-water EMS site
+8125,Pitt Lake,LFRA,53.908,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,39.019,53.394,0.0,0.0,0.0,0.0,0.0,0.0,17.219,14.315,No active gauge or near-water EMS site
+8126,Pitt River,LFRA,67.43,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,13.821,0.32,0.0,0.0,0.0,0.0,0.0,0.0,16.593,23.123,No active gauge or near-water EMS site
+4678,Statlu Creek,HARR,49.627,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,18.484,14.759,No active gauge or near-water EMS site
+4677,Statlu Creek,HARR,63.064,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,24.05,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.704,14.274,No active gauge or near-water EMS site
+4680,Skwellepil Creek,HARR,42.703,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,10.325,0.382,0.0,0.0,0.0,0.0,0.0,0.0,20.265,19.155,No active gauge or near-water EMS site
+4679,Maisal Creek,HARR,29.575,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.364,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.341,20.224,No active gauge or near-water EMS site
+4681,Eagle Creek,HARR,30.654,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,13.665,0.0,0.0,0.0,0.0,0.0,0.0,0.0,20.851,27.274,No active gauge or near-water EMS site
+4683,Chehalis River,HARR,30.822,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,8.321,1.015,0.0,0.0,0.0,0.0,0.0,0.0,20.084,26.127,No active gauge or near-water EMS site
+4682,Chehalis River,HARR,33.47,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.23,5.281,0.0,0.0,0.0,0.0,0.0,0.0,15.653,21.673,No active gauge or near-water EMS site
+4684,Chehalis River,HARR,37.931,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.852,0.383,0.0,0.0,0.0,0.0,0.0,0.0,18.766,22.778,No active gauge or near-water EMS site
+4685,Morris Creek,HARR,59.587,0.0,2,0,0,0,2,0,3.356,0.0,0.0,3.356,0.0,False,31.893,0.776,16.279,0.0,16.279,27.366,51.042,51.042,6.105,10.423,No active gauge or near-water EMS site
+4686,Trout Lake Creek,HARR,22.24,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.092,1.397,1.918,0.0,1.918,3.888,17.29,17.29,6.746,7.903,No active gauge or near-water EMS site
+4687,Cartmell Creek,HARR,20.037,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,10.711,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.579,15.395,No active gauge or near-water EMS site
+4689,Bear Creek,HARR,33.157,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,12.326,0.109,0.0,0.0,0.0,0.0,0.0,0.0,15.602,12.864,No active gauge or near-water EMS site
+4688,Walian Creek,HARR,25.224,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,7.083,0.0,0.0,0.0,0.0,6.892,0.0,0.0,16.481,21.578,No active gauge or near-water EMS site
+4690,Cogburn Creek,HARR,80.585,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,30.648,0.159,0.0,0.0,0.0,0.0,0.0,0.0,27.512,18.031,No active gauge or near-water EMS site
+4691,Talc Creek,HARR,44.21,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.45,0.0,0.0,0.0,0.0,0.0,0.0,0.0,20.817,13.048,No active gauge or near-water EMS site
+4694,Mystery Creek,HARR,24.998,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,5.082,0.125,0.0,0.0,0.0,0.0,0.0,0.0,22.56,27.192,No active gauge or near-water EMS site
+4693,Cogburn Creek,HARR,38.779,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,13.524,0.185,0.0,0.0,0.0,0.0,0.0,0.0,24.084,9.981,No active gauge or near-water EMS site
+4714,Harrison River,HARR,37.078,0.0,0,0,0,3,3,3,0.0,0.0,8.091,8.091,8.091,False,13.24,0.0,13.24,4.052,13.24,13.24,100.0,100.0,1.533,8.005,Active hydrometric station
+4715,Unnamed (4715),HARR,42.603,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,4.394,0.0,0.0,0.0,0.0,4.394,0.0,0.0,14.85,17.99,No active gauge or near-water EMS site
+4717,Unnamed (4717),HARR,99.827,0.0,1,1,1,0,2,1,1.002,1.002,0.0,2.003,1.002,False,10.549,0.26,4.429,4.429,4.429,4.429,41.982,41.982,10.759,13.215,Near-water EMS site only
+4718,Unnamed (4718),HARR,37.759,0.0,1,0,0,0,0,0,2.648,0.0,0.0,0.0,0.0,False,4.39,0.234,0.0,0.0,0.0,4.15,0.0,0.0,21.587,24.672,No active gauge or near-water EMS site
+4725,Anderson Creek,HARR,20.594,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,11.632,0.0,10.851,11.52,11.52,11.52,93.283,99.037,4.156,3.891,No active gauge or near-water EMS site
+4726,Johnsons Slough,HARR,31.445,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,15.81,0.529,5.021,0.893,5.021,5.021,31.761,31.761,5.965,7.312,No active gauge or near-water EMS site
+4724,Hogg Slough,HARR,31.878,0.0,3,0,0,0,1,0,9.411,0.0,0.0,3.137,0.0,False,2.641,0.0,0.0,0.0,0.0,2.641,0.0,0.0,5.43,4.339,No active gauge or near-water EMS site
+4727,Wahleach Creek,HARR,81.796,0.0,3,3,3,0,4,3,3.668,3.668,0.0,4.89,3.668,False,25.615,4.835,6.774,25.615,25.615,25.615,26.446,100.0,7.086,1.657,Near-water EMS site only
+4729,Unnamed (4729),HARR,20.985,0.0,1,1,1,0,0,1,4.765,4.765,0.0,0.0,4.765,False,6.609,0.0,0.0,6.609,6.609,6.609,0.0,100.0,11.196,3.552,Near-water EMS site only
+4728,Unnamed (4728),HARR,27.467,0.0,1,1,1,0,1,1,3.641,3.641,0.0,3.641,3.641,False,5.254,0.0,0.0,5.254,5.254,5.254,0.0,100.0,10.801,3.821,Near-water EMS site only
+4730,Fraser River,HARR,119.449,0.0,4,1,1,2,5,3,3.349,0.837,1.674,4.186,2.512,False,70.461,0.102,22.252,51.694,59.112,70.461,31.58,83.894,9.939,4.608,Active hydrometric station
+4731,Fraser River,HARR,54.229,0.0,3,1,1,0,2,1,5.532,1.844,0.0,3.688,1.844,False,29.097,0.0,1.548,29.097,29.097,29.097,5.32,100.0,8.723,3.166,Near-water EMS site only
+4732,Unnamed (4732),HARR,80.232,0.0,4,1,1,0,1,1,4.986,1.246,0.0,1.246,1.246,False,39.594,0.0,28.342,35.804,38.573,39.594,71.581,97.421,4.938,4.345,Near-water EMS site only
+4733,Fraser River,HARR,62.041,0.0,2,1,1,1,2,2,3.224,1.612,1.612,3.224,3.224,False,38.327,0.0,20.28,33.512,35.78,37.913,52.912,93.353,6.276,2.839,Active hydrometric station
+4673,Norrish Creek,HARR,88.882,0.0,0,0,0,0,2,0,0.0,0.0,0.0,2.25,0.0,False,43.679,0.0,0.0,2.549,2.549,2.966,0.0,5.835,11.837,8.327,No active gauge or near-water EMS site
+4674,Norrish Creek,HARR,32.145,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,10.644,0.904,0.0,0.0,0.0,0.0,0.0,0.0,9.56,8.945,No active gauge or near-water EMS site
+4675,Harrison River,HARR,62.834,0.0,1,1,1,0,0,1,1.591,1.591,0.0,0.0,1.591,False,35.897,0.395,32.07,25.438,35.897,35.897,89.34,100.0,3.555,2.928,Near-water EMS site only
+4676,Chehalis River,HARR,80.222,0.0,0,0,0,1,2,1,0.0,0.0,1.247,2.493,1.247,False,33.063,0.0,19.05,0.0,19.05,19.05,57.618,57.618,4.104,11.643,Active hydrometric station
+1906,Sumas River,CHWK,64.345,0.0,13,10,8,1,8,9,20.204,15.541,1.554,12.433,13.987,False,40.194,0.138,13.808,40.194,40.194,40.194,34.353,100.0,8.927,1.817,Active hydrometric station
+1907,Vedder Canal,CHWK,43.269,0.0,8,3,3,1,2,4,18.489,6.933,2.311,4.622,9.245,False,18.714,0.0,6.12,18.714,18.714,18.714,32.704,100.0,6.262,1.123,Active hydrometric station
+1908,Sweltzer River,CHWK,46.946,0.0,2,1,1,0,2,1,4.26,2.13,0.0,4.26,2.13,False,11.521,6.356,5.655,11.454,11.454,11.521,49.083,99.422,5.455,1.349,Near-water EMS site only
+1909,Frosst Creek,CHWK,20.347,0.0,0,0,0,0,1,0,0.0,0.0,0.0,4.915,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,,,9.25,5.59,No active gauge or near-water EMS site
+1910,Liumchen Creek,CHWK,40.136,0.0,0,0,0,0,1,0,0.0,0.0,0.0,2.492,0.0,False,18.759,0.0,2.538,3.882,4.192,6.308,13.528,22.344,7.936,6.105,No active gauge or near-water EMS site
+1911,Tamihi Creek,CHWK,47.538,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.343,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.197,7.477,No active gauge or near-water EMS site
+1915,Nesakwatch Creek,CHWK,44.169,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,24.184,0.0,0.0,0.0,0.0,10.849,0.0,0.0,8.834,11.753,No active gauge or near-water EMS site
+1914,Foley Creek,CHWK,78.745,0.0,0,0,0,0,1,0,0.0,0.0,0.0,1.27,0.0,False,35.162,0.261,3.58,0.0,3.58,12.341,10.183,10.183,8.615,6.566,No active gauge or near-water EMS site
+1913,Chipmunk Creek,CHWK,45.184,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,16.928,0.0,6.39,1.161,7.551,7.551,37.746,44.604,5.622,7.888,No active gauge or near-water EMS site
+1912,Slesse Creek,CHWK,59.199,0.0,0,0,0,1,1,1,0.0,0.0,1.689,1.689,1.689,False,36.661,0.0,12.859,4.698,12.859,12.859,35.075,35.075,4.493,6.445,Active hydrometric station
+1920,Chilliwack River,CHWK,52.623,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,20.758,0.0,7.823,6.129,7.823,7.823,37.685,37.685,7.339,8.022,No active gauge or near-water EMS site
+1921,Chilliwack River,CHWK,65.082,0.0,1,1,1,0,2,1,1.537,1.537,0.0,3.073,1.537,False,30.177,0.0,17.95,25.017,25.017,25.017,59.482,82.903,5.597,3.486,Near-water EMS site only
+1922,Chilliwack River,CHWK,46.951,0.0,1,0,0,1,1,1,2.13,0.0,2.13,2.13,2.13,False,25.448,0.186,23.552,7.516,23.552,25.448,92.552,92.552,2.336,5.978,Active hydrometric station
+1925,Sumas Lake Canal,CHWK,36.301,0.0,5,1,1,0,0,1,13.774,2.755,0.0,0.0,2.755,False,1.187,0.0,0.0,1.187,1.187,1.187,0.0,100.0,11.064,4.189,Near-water EMS site only
+1926,Marshall Creek,CHWK,38.013,0.0,15,5,5,0,3,5,39.461,13.154,0.0,7.892,13.154,False,9.805,0.0,4.738,9.805,9.805,9.805,48.321,100.0,4.675,2.191,Near-water EMS site only
+1927,Saar Creek,CHWK,32.339,0.0,6,3,3,0,1,3,18.553,9.277,0.0,3.092,9.277,False,6.045,0.0,3.008,6.045,6.045,6.045,49.762,100.0,6.423,1.657,Near-water EMS site only
+1928,Wilson Slough,CHWK,9.922,0.0,0,0,0,0,1,0,0.0,0.0,0.0,10.078,0.0,False,3.747,0.0,0.0,3.747,3.747,3.747,0.0,100.0,5.776,2.036,No active gauge or near-water EMS site
+1929,Chilliwack Creek,CHWK,51.911,0.0,5,2,2,0,1,2,9.632,3.853,0.0,1.926,3.853,False,16.822,0.0,2.182,14.807,16.235,16.822,12.972,96.512,4.418,2.931,Near-water EMS site only
+1930,Semmihault Creek,CHWK,37.049,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,,,7.747,3.8,No active gauge or near-water EMS site
+1931,Gravel Slough,CHWK,20.69,0.0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,False,17.411,0.0,13.045,10.42,17.358,17.411,74.925,99.697,4.15,5.524,No active gauge or near-water EMS site
+1932,Hope Slough,CHWK,51.837,0.0,1,0,0,0,1,0,1.929,0.0,0.0,1.929,0.0,False,13.756,0.0,5.618,13.21,13.756,13.756,40.842,100.0,4.381,3.842,No active gauge or near-water EMS site
+1933,Elk Creek,CHWK,22.981,0.0,4,4,4,0,3,4,17.406,17.406,0.0,13.054,17.406,False,10.018,0.0,0.0,10.018,10.018,10.018,0.0,100.0,7.435,0.841,Near-water EMS site only
+1934,Unnamed (1934),CHWK,14.492,0.0,2,0,0,0,0,0,13.801,0.0,0.0,0.0,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,,,10.981,7.905,No active gauge or near-water EMS site
+8164,Unnamed (8164),LFRA,11.397,0.0,1,0,0,0,0,0,8.774,0.0,0.0,0.0,0.0,False,0.071,0.0,0.0,0.0,0.0,0.071,0.0,0.0,18.565,9.315,No active gauge or near-water EMS site
+8087,Unnamed (8087),LFRA,38.472,0.0,30,13,13,0,2,13,77.98,33.791,0.0,5.199,33.791,False,4.602,0.0,0.0,4.602,4.602,4.602,0.0,100.0,18.086,1.242,Near-water EMS site only
