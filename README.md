@@ -4,8 +4,8 @@ Where in the Lower Mainland and Fraser Valley are hydrometric gauges and water-s
 watersheds have none? This project combines BC Freshwater Atlas hydrography with provincial monitoring-station
 records, using GeoPandas/Shapely in NAD83 / BC Albers (EPSG:3005).
 
-> **Scope:** this is an analysis of *where stations are*. It does not use any measurements, and station
-> coverage says nothing about water quality, flow conditions or environmental risk.
+> Scope: this looks at where stations are, not what they measure. It uses no measurements, and station
+> coverage says nothing about water quality, flow or environmental risk.
 
 | | |
 |---|---|
@@ -28,7 +28,7 @@ Details, layer names and filters: [docs/data_sources.md](docs/data_sources.md).
      Records with no sample date are excluded. Records sharing identical coordinates are merged into one site
      (344 records → 331 sites).
    - *Near-water EMS (proxy)*: recent EMS sites within 200 m of a mapped stream (Strahler order ≥ 3) or lake (≥ 10 ha) – 129 sites.
-     **This is a spatial proxy, not a confirmed site type.** EMS location-type codes were not decoded, so the recent EMS set
+     This is a spatial proxy, not a confirmed site type. EMS location-type codes were not decoded, so the recent EMS set
      includes all media (e.g. air, groundwater, permitted discharges). Being within 200 m of mapped water suggests, but does
      not confirm, a surface-water sampling site; sites on small (order 1–2) streams are missed.
 3. **Spatial joins** – point-in-polygon counts per watershed (every station is assigned to exactly one unit).
@@ -72,17 +72,17 @@ Figures from `outputs/summary.json` and `outputs/watershed_coverage.csv`.
 - Sensitivity of the proxy: 85 / 104 / 129 / 179 / 213 recent EMS sites lie within 50 / 100 / 200 / 500 / 1000 m of mapped water.
 
 ## Interpretation and limitations
-- **Coverage is not risk or water quality.** A watershed with no station is not shown to be degraded or at risk. Remote,
+- Coverage is not risk or water quality. A watershed with no station is not shown to be degraded or at risk. Remote,
   undeveloped headwaters may reasonably have little monitoring, and a dense cluster says nothing about condition.
-- **The near-water EMS class is a proxy** (see Method 2). It can include non-water sites that happen to be near a stream,
+- The near-water EMS class is a proxy (see Method 2). It can include non-water sites that happen to be near a stream,
   and miss genuine sampling sites on small streams.
-- **EMS is a legacy snapshot.** The province replaced EMS with EnMoDS in March 2026. "Recently sampled" (≥ 2016) is a
+- EMS is a legacy snapshot. The province replaced EMS with EnMoDS in March 2026. "Recently sampled" (≥ 2016) is a
   threshold chosen for this project. Sampling frequency, parameters and data quality are not assessed.
-- **Density depends on unit size.** One unit (Unnamed 8183, 0.08 km²) is a sliver, and its density is not meaningful.
-- **Edge effects.** The study area follows the download extent, not a full watershed-group boundary. Stations beyond
+- Density depends on unit size. One unit (Unnamed 8183, 0.08 km²) is a sliver, and its density is not meaningful.
+- Edge effects. The study area follows the download extent, not a full watershed-group boundary. Stations beyond
   that extent are not available, so the outer edges may slightly under-report coverage.
-- **Networks not included:** municipal, BC Hydro, industry and private networks, and the provincial groundwater observation-well network.
-- **5 km is a screening distance.** It is straight-line distance, so it ignores flow direction and drainage divides and does
+- Networks not included: municipal, BC Hydro, industry and private networks, and the provincial groundwater observation-well network.
+- 5 km is a screening distance. It is straight-line distance, so it ignores flow direction and drainage divides and does
   not mean a station represents that stream.
 
 ## QGIS project
