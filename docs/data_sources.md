@@ -17,7 +17,7 @@ Licence for all: **[Open Government Licence – British Columbia](https://www2.g
 **Download extent:** BC Albers x 1,170,000–1,330,000, y 430,000–520,000 (≈ Fraser Valley / Lower Mainland).
 
 **Caveats**
-- The EMS was **replaced by EnMoDS on 5 March 2026**; EMS results stop at 26 Feb 2026 (per the catalogue notice). This analysis uses the legacy EMS *location* snapshot, not EnMoDS.
+- EMS is a legacy system. Its newest sample date in the downloaded locations is 2026-02-18, and the download was made on 2026-11-06. I understand the province has been moving EMS data to a new system (EnMoDS), but I did not save the catalogue notice, so the replacement date is not stated here. This analysis uses only the EMS location snapshot.
 - EMS records with no `LAST_SAMPLE_DATE` (2,718 in the download extent) are treated as not recently sampled. Hydrometric stations with status `NA` (4) are treated as inactive.
 - Only station **metadata** (location, sample dates/counts) is used. **No monitoring results/measurements are used or reported.**
 - The `LOCATION_TYPE_CD` codes are not decoded: no published code table was found, so EMS locations of all media (air, water, wells, permits…) are in the "recent EMS" set. A spatial proxy (within 200 m of mapped water) is used to flag likely surface-water sites. It is a proxy, not a confirmed site type (see README).
