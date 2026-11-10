@@ -53,7 +53,7 @@ def save(fig, name):
 fig, ax = frame("Map 1 - Study Area, Hydrography and Monitoring Stations",
                 "Lower Mainland / Fraser Valley: Lower Fraser, Chilliwack and Harrison watershed groups")
 base(ax)
-st.assign(w=0.3 + 0.35 * (st.STREAM_ORDER - 3)).plot(ax=ax, color=BLUE, linewidth=st.STREAM_ORDER.sub(3).mul(.35).add(.3), zorder=3)
+st.plot(ax=ax, color=BLUE, linewidth=st.STREAM_ORDER.sub(3).mul(.35).add(.3), zorder=3)
 ws.boundary.plot(ax=ax, color="#7a7a7a", lw=0.4, zorder=4)
 ems.plot(ax=ax, color="#e08a1e", markersize=7, alpha=.7, zorder=5)
 hy[~hy.index.isin(hya.index)].plot(ax=ax, color="#888", marker="^", markersize=14, zorder=6)
@@ -69,12 +69,11 @@ furniture(ax); save(fig, "01_study_area_stations.png")
 
 # ---- Map 2: station density choropleth
 fig, ax = frame("Map 2 - Monitoring-Station Density by Assessment Watershed",
-                "Distinct sites per 100 km2: active hydrometric stations + recent EMS sites within 200 m of mapped water (proxy)")
-bins = [0, 1e-9, 1, 2, 5, 1e9]; labels = ["0 (none)", "> 0 to 1", "1 to 2", "2 to 5", "> 5"]
+                "Distinct sites per 100 km2: active hydrometric stations + recent EMS sites within 200 m of mapped water")
+labels = ["0 (none)", "> 0 to 1", "1 to 2", "2 to 5", "> 5"]
 cols = ["#f7f7f7", "#fee8c8", "#fdbb84", "#e34a33", "#7f0000"]
-cat = np.digitize(ws.dens_sites_comb, bins[1:-1], right=False)
 cat = np.where(ws.dens_sites_comb == 0, 0, np.clip(np.digitize(ws.dens_sites_comb, [1, 2, 5]) + 1, 1, 4))
-ws.assign(c=[cols[i] for i in cat]).plot(ax=ax, color=[cols[i] for i in cat], ec="#777", lw=.4, zorder=1)
+ws.plot(ax=ax, color=[cols[i] for i in cat], ec="#777", lw=.4, zorder=1)
 lk.plot(ax=ax, fc="#a9cce3", ec="none", zorder=2)
 emsw.plot(ax=ax, color="#1f3b73", markersize=6, zorder=5); hya.plot(ax=ax, color="k", marker="^", markersize=26, zorder=6)
 ax.legend(handles=[Patch(fc=c, ec="#777", label=l) for c, l in zip(cols, labels)] + [
@@ -85,7 +84,7 @@ ax.legend(handles=[Patch(fc=c, ec="#777", label=l) for c, l in zip(cols, labels)
 furniture(ax); save(fig, "02_station_density.png")
 
 # ---- Map 3: observed coverage & 5 km buffers
-fig, ax = frame("Map 3 - Observed Monitoring Coverage (not environmental risk)",
+fig, ax = frame("Map 3 - Monitoring coverage by assessment watershed",
                 "Station presence per watershed; dashed line = 5 km (straight-line) from active hydrometric stations")
 cmap = {"Active hydrometric station": "#4daf4a", "Near-water EMS site only": "#ffd966",
         "No active gauge or near-water EMS site": "#d9d9d9"}
@@ -100,6 +99,6 @@ ax.legend(handles=[Patch(fc=c, ec="#777", label=f"{k} (n={n.get(k,0)})") for k, 
     Line2D([], [], color=BLUE, lw=1, label="Streams, order >= 3"),
     Line2D([], [], color="#c0392b", ls="--", label="5 km from active hydrometric station"),
     Line2D([], [], marker="^", ls="", color="#c0392b", mec="k", ms=7, label="Active hydrometric station"),
-    Line2D([], [], marker="o", ls="", color="#1f3b73", ms=4, label="EMS site within 200 m of mapped water (proxy)")],
+    Line2D([], [], marker="o", ls="", color="#1f3b73", ms=4, label="EMS site within 200 m of mapped water")],
     loc="upper center", bbox_to_anchor=(0.5, -0.085), ncol=2, fontsize=7.5, title="Watershed coverage class", title_fontsize=9, framealpha=.95).set_zorder(20)
 furniture(ax); save(fig, "03_coverage_buffers.png")

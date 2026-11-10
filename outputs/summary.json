@@ -10,7 +10,6 @@
   "hydro_in_aoi": 133,
   "hydro_active_in_aoi": 30,
   "hydro_active_in_bbox_outside_aoi": 8,
-  "hydro_active_within5km_of_aoi_edge": 12,
   "stream_km_order3plus": 2427.0,
   "lakes_ge10ha": 89,
   "ws_with_active_gauge": 25,
@@ -28,6 +27,11 @@
     "active_hydrometric": 0.471,
     "near_water_ems": 2.027,
     "distinct_sites_combined": 2.404
+  },
+  "fraser_corridor_5km": {
+    "area_pct": 22.2,
+    "sites_pct": 42.5,
+    "n_sites": 153
   },
   "median_dens_combined_per100km2": 0.0,
   "small_units_lt5km2": [

@@ -14,7 +14,6 @@ warnings.filterwarnings('ignore', message='.*keep_geom_type.*')  # line/polygon 
 BBOX = box(1170000, 430000, 1330000, 520000)         # download extent (same as script 01)
 GROUPS = ["LFRA", "CHWK", "HARR"]                    # Lower Fraser, Chilliwack, Harrison
 RECENT_FROM = pd.Timestamp("2016-01-01")             # EMS "recently sampled" cut-off
-HYDRO_BUF_M = 1_000                                  # buffer for station footprint
 COVER_DIST_M = 5_000                                 # "stream within X km of a station"
 SW_PROX_M = 200                                      # EMS "near surface water" threshold
 
@@ -39,6 +38,7 @@ def main():
     # ---------- stations ----------
     ems = load("ems_locations")
     # CRS validation: reprojected geometry should reproduce the stored LATITUDE/LONGITUDE
+    # (EMS stores longitude as positive west, hence -abs())
     ll = ems.to_crs(4326)
     ems["coord_err_m"] = gpd.GeoSeries(gpd.points_from_xy(ll.geometry.x, ll.geometry.y), crs=4326).to_crs(CRS).distance(
         gpd.GeoSeries(gpd.points_from_xy(-ems.LONGITUDE.abs(), ems.LATITUDE), crs=4326).to_crs(CRS))
@@ -61,7 +61,7 @@ def main():
     streams = streams[streams.geom_type.isin(["LineString", "MultiLineString"])]
     lakes = lakes_full[lakes_full.intersects(aoi)].copy()
 
-    # ---------- proximity: EMS near mapped surface water (PROXY for surface-water sites) ----------
+    # ---------- proximity: EMS sites near mapped surface water ----------
     water = pd.concat([streams_full.geometry, lakes_full.geometry]).union_all()   # unclipped: no edge loss
     ems_q_bbox["dist_water_m"] = ems_q_bbox.distance(water)
     ems_q_bbox["near_sw"] = ems_q_bbox.dist_water_m <= SW_PROX_M
@@ -115,12 +115,11 @@ def main():
         j = gpd.sjoin_nearest(cen, pts[["geometry"]], distance_col="d")
         ws[f"nearest_{name}_km"] = ws.ws_id.map(j.drop_duplicates("ws_id").set_index("ws_id").d / 1000)
 
-    # classification of OBSERVED station coverage (not risk, not water quality)
+    # coverage class per watershed
     ws["coverage_class"] = np.select(
         [ws.n_hydro_active > 0, ws.n_ems_sw > 0],
         ["Active hydrometric station", "Near-water EMS site only"],
         default="No active gauge or near-water EMS site")
-    edge = gpd.GeoSeries([aoi], crs=CRS).boundary.iloc[0]
 
     # ---------- write outputs ----------
     gpkg = PROC / "analysis.gpkg"
@@ -129,6 +128,12 @@ def main():
                      lakes=lakes[["GNIS_NAME_1", "AREA_HA", "geometry"]], aoi=gpd.GeoDataFrame(geometry=[aoi], crs=CRS)).items():
         g.to_file(gpkg, layer=n, driver="GPKG")
     ws.drop(columns="geometry").round(3).to_csv(OUT / "watershed_coverage.csv", index=False)
+
+    # ---------- Fraser corridor: share of distinct sites vs share of area within 5 km of the Fraser mainstem ----------
+    fraser_zone = streams_full[streams_full.GNIS_NAME == "Fraser River"].buffer(COVER_DIST_M).union_all()
+    sites = pd.concat([hyd_act.geometry, ems_sw[~ems_sw.colocated_gauge].geometry])
+    fraser = dict(area_pct=round(ws.intersection(fraser_zone).area.sum() / ws.area.sum() * 100, 1),
+                  sites_pct=round(sites.within(fraser_zone).mean() * 100, 1), n_sites=len(sites))
 
     # ---------- summary & validation report ----------
     tot = ws.stream_km.sum()
@@ -142,7 +147,6 @@ def main():
         ems_null_last_sample_date_in_bbox=int(ems.LAST_SAMPLE_DATE.isna().sum()),
         hydro_in_aoi=len(hyd), hydro_active_in_aoi=len(hyd_act),
         hydro_active_in_bbox_outside_aoi=len(hyd_act_bbox) - len(hyd_act),
-        hydro_active_within5km_of_aoi_edge=int((hyd_act.distance(edge) <= COVER_DIST_M).sum()),
         stream_km_order3plus=round(tot, 1), lakes_ge10ha=len(lakes),
         ws_with_active_gauge=int((ws.n_hydro_active > 0).sum()),
         ws_near_water_ems_only=int(((ws.n_hydro_active == 0) & (ws.n_ems_sw > 0)).sum()),
@@ -155,6 +159,7 @@ def main():
         overall_dens_per100km2={"active_hydrometric": round(ws.n_hydro_active.sum() / ws.area_km2.sum() * 100, 3),
                                 "near_water_ems": round(ws.n_ems_sw.sum() / ws.area_km2.sum() * 100, 3),
                                 "distinct_sites_combined": round(ws.n_sites_comb.sum() / ws.area_km2.sum() * 100, 3)},
+        fraser_corridor_5km=fraser,
         median_dens_combined_per100km2=round(ws.dens_sites_comb.median(), 3),
         small_units_lt5km2=ws.loc[ws.small_unit, "ws_name"].tolist(),
         ems_near_water_sensitivity={f"{d}m": int((ems_q.dist_water_m <= d).sum()) for d in (50, 100, 200, 500, 1000)},
