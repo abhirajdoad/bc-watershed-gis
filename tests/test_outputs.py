@@ -27,9 +27,14 @@ def test_percentages_bounded_and_units_nonoverlapping():
     assert (ws.pct_stream_covered_any.fillna(0) >= ws.pct_stream_covered_hydro.fillna(0) - 1e-6).all()
     assert ws.geometry.union_all().area >= ws.geometry.area.sum() * 0.999   # overlap < 0.1%
 
+@pytest.mark.skipif(not (ROOT / "data/raw/ems_locations.geojson").exists(), reason="raw data not downloaded")
 def test_ems_coordinate_roundtrip():
-    s = json.loads((ROOT / "outputs/summary.json").read_text())
-    assert s["validation"]["ems_max_coord_err_m"] < 5
+    """Reproject raw EMS points to WGS84 and compare with the stored lat/lon (EMS longitude is positive west)."""
+    ems = gpd.read_file(ROOT / "data/raw/ems_locations.geojson")
+    ll = ems.to_crs(4326)
+    stored = gpd.GeoSeries(gpd.points_from_xy(-ems.LONGITUDE.abs(), ems.LATITUDE), crs=4326).to_crs(3005)
+    assert ems.geometry.distance(stored).max() < 5      # metres
+    assert (ll.geometry.x.sub(-ems.LONGITUDE.abs()).abs() < 1e-3).all()
 
 
 RAW = ROOT / "data/raw"
