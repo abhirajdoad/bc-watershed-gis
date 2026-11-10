@@ -77,7 +77,7 @@ The QGIS project `qgis/bc_watershed_coverage.qgz` (built with QGIS 4.2.3) loads 
 - `scripts/`: 01 download, 02 analysis, 03 maps, 04 QGIS project
 - `data/raw/`: downloaded GeoJSON (not committed); `data/processed/analysis.gpkg`: analysis layers
 - `outputs/`: `summary.json` and `watershed_coverage.csv` (every figure above comes from these)
-- `maps/`, `qgis/`, `tests/`, `docs/` (data sources, download manifest, progress notes)
+- `maps/`, `qgis/`, `tests/`, `docs/` (data sources, download manifest)
 
 ## Limitations
 
